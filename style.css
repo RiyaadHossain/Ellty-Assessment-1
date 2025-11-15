@@ -1,0 +1,35 @@
+/* Base button reset */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px; /* adjust if figma radius is different */
+  transition: all 0.2s ease;
+}
+
+/* Primary yellow button */
+.btn-primary {
+  background: #FFC400;  /* adjust if Figma uses a slightly different color */
+  color: #333;           /* looks like dark grey text */
+  padding: 12px 16px;
+  width: 100%;           /* full width as shown */
+  height: 48px;          /* from visual matching */
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Hover */
+.btn-primary:hover {
+  background: #FFB800; /* slightly darker yellow */
+}
+
+/* Active (pressed) */
+.btn-primary:active {
+  background: #E5A900;
+  transform: translateY(1px);
+}
